@@ -67,7 +67,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 9px;
-    max-width: 194px;
+    max-width: 184px;
     padding-right: 46px;
 }
 .gallery__info-impact{
