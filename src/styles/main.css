@@ -1,0 +1,219 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url("/src/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url("/src/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: PoppinsMedium;
+    src: url("/src/fonts/Poppins-Medium.ttf");
+}
+
+body{
+    font-family: PoppinsSemiBold, sans-serif;
+    background-color: #F2F1EF;
+    color: #011627;
+    position: relative;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery{
+    padding: 83px 0 69px 0;
+}
+
+.gallery__info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.gallery__info-left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.gallery__info-subtitle{
+    font-family: PoppinsRegular, sans-serif;
+    font-size: 16px;
+    color: #8B8BAE;
+}
+.gallery__info-title{
+    font-size: 48px;
+    line-height: 1;
+}
+
+.gallery__info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 194px;
+    padding-right: 46px;
+}
+.gallery__info-impact{
+    font-family: PoppinsRegular, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+
+}
+.gallery-btn{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: inherit;
+    color: inherit;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: PoppinsSemiBold, sans-serif;
+}
+.container-gallery{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery__scroll{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.gallery__wrapper {
+    display: flex;
+    gap: 20px;
+
+    padding-left: calc((100vw - 1200px) / 2);
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.gallery__item{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 488px;
+    /*height: 464px;*/
+    padding: 37px 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.gallery__item-info{
+    max-width: 448px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+}
+.gallery__item-subtitle{
+    font-family: PoppinsRegular, sans-serif;
+    font-size: 16px;
+    color: #8B8BAE;
+    margin-bottom: 12px;
+}
+.gallery__item-title{
+    font-size: 32px;
+    line-height: 32px;
+
+}
+.gallery__item-images{
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+
+/*modal*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 47px;
+    right: 47px;
+    cursor: pointer;
+}
+.modal__close svg path{
+    stroke: #989898;
+}
+.modal__content {
+    width: 400px;
+    height: 420px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+.modal__title{
+    font-size: 32px;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.modal__desc{
+    font-family: PoppinsRegular, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8B8BAE;
+    margin-bottom: 32px;
+    max-width: 320px;
+}
+.modal__subtitle{
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.modal__actions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.modal__btn{
+    font-family: PoppinsMedium,sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid #011627;
+    outline: none;
+    border-radius: 63px;
+    height: 64px;
+}
+
